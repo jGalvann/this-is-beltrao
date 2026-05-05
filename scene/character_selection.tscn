@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://bkwae7oxgsvgv"]
+
+[ext_resource type="Script" uid="uid://dvg10gypfno0n" path="res://script/character_selection.gd" id="1_ci3hj"]
+[ext_resource type="Texture2D" uid="uid://ce500k2y10mk8" path="res://portrait/cleric(f)v2.png" id="2_x0k4l"]
+[ext_resource type="Texture2D" uid="uid://doguy4mppejp4" path="res://portrait/cleric(m).png" id="3_mxb7q"]
+[ext_resource type="Texture2D" uid="uid://d3pb8ppmtc41e" path="res://portrait/ranger(f).png" id="4_kjwij"]
+[ext_resource type="Texture2D" uid="uid://84nctuhofpmn" path="res://portrait/ranger(m).png" id="5_sxjpy"]
+[ext_resource type="Texture2D" uid="uid://cftp25lexajcf" path="res://portrait/wizard(f).png" id="6_w7eue"]
+[ext_resource type="Texture2D" uid="uid://cu57d2oe0q5c5" path="res://portrait/wizard(m).png" id="7_ud5dw"]
+[ext_resource type="Texture2D" uid="uid://c1j2qxv27ejgy" path="res://portrait/warrior(f).png" id="8_l5g1m"]
+[ext_resource type="Texture2D" uid="uid://c2184kgd6e78o" path="res://portrait/warrior(m).png" id="9_oh2f5"]
+
+[node name="CharacterSelection" type="CanvasLayer" unique_id=2017223443]
+script = ExtResource("1_ci3hj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=152035914]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer" unique_id=1629285841]
+layout_mode = 2
+columns = 4
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=1667751881]
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+texture_normal = ExtResource("2_x0k4l")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=1142882088]
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+texture_normal = ExtResource("3_mxb7q")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=1498514590]
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+texture_normal = ExtResource("4_kjwij")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton4" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=126423138]
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+texture_normal = ExtResource("5_sxjpy")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton5" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=586954999]
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+texture_normal = ExtResource("6_w7eue")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=1230934107]
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+texture_normal = ExtResource("7_ud5dw")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=648015278]
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+texture_normal = ExtResource("8_l5g1m")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/GridContainer" unique_id=1017257878]
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+texture_normal = ExtResource("9_oh2f5")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=709574884]
+layout_mode = 2
+text = "Escolha seu personagem "
+horizontal_alignment = 1
+
+[node name="ConfirmButton" type="Button" parent="VBoxContainer" unique_id=1047525818]
+layout_mode = 2
+text = "JOGAR"
+
+[connection signal="pressed" from="VBoxContainer/ConfirmButton" to="." method="_on_confirm_button_pressed"]

@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="This is beltrao"
-run/main_scene="uid://cnx8lympmr3n0"
+run/main_scene="uid://bkwae7oxgsvgv"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*uid://bcq3cfo7gsneu"
 
 [input]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu57d2oe0q5c5"
-path="res://.godot/imported/wizard(m).png-7e93859df8f8c1d00a725048ba62512d.ctex"
+uid="uid://ddx1i37mso272"
+path="res://.godot/imported/warrior_male.png-f4dd13d90c00d51c6065a3bf9e5cfb94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprite/wizard(m).png"
-dest_files=["res://.godot/imported/wizard(m).png-7e93859df8f8c1d00a725048ba62512d.ctex"]
+source_file="res://sprite/warrior_male.png"
+dest_files=["res://.godot/imported/warrior_male.png-f4dd13d90c00d51c6065a3bf9e5cfb94.ctex"]
 
 [params]
 
